@@ -41,34 +41,20 @@
       </div>
     </header>
 
-    <div class="toolbar-body">
-      <nav class="nav-group">
-        <h5 class="nav-group-title">Favorites</h5>
-        <a class="nav-group-item active">
-          <span class="icon icon-home"></span>
-          connors
-        </a>
-        <span class="nav-group-item">
-          <span class="icon icon-download"></span>
-          Downloads
-        </span>
-        <span class="nav-group-item">
-          <span class="icon icon-folder"></span>
-          Documents
-        </span>
-        <span class="nav-group-item">
-          <span class="icon icon-signal"></span>
-          AirPlay
-        </span>
-        <span class="nav-group-item">
-          <span class="icon icon-print"></span>
-          Applications
-        </span>
-        <span class="nav-group-item">
-          <span class="icon icon-cloud"></span>
-          Desktop
-        </span>
-      </nav>
+    <div>
+      <form class="body" action="">
+          <div class="dropper">
+            <input 
+              type="file"
+              accept="video/*"
+            />
+            <span>Drag a Video Here</span>
+          </div>
+          <button class="btn btn-default pull-right">
+              <span class="icon icon-video"></span>
+                            <span style="margin-left: 10px">Get Information</span>
+          </button>
+      </form>
     </div>
     
     
@@ -85,3 +71,11 @@
     </footer>
   </body>
 </html>
+
+<script>
+  document.querySelector('form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    let file = document.querySelector('input').files[0];
+    console.log(files);
+  });
+</script>

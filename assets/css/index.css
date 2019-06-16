@@ -1,0 +1,21 @@
+.toolbar-footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+
+.title {
+  -webkit-app-region: drag;
+}
+
+.title {
+  padding: 4px;
+}
+
+.nav-group {
+  width: 30%;
+  background-color: #f1f1f1;
+  height: 100%;
+  position: absolute;
+  max-width: 233px;
+}
